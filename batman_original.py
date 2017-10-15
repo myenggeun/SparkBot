@@ -66,8 +66,8 @@ def index(request):
   
   
 ####CHANGE THESE VALUES#####  
-bot_email = "BaseBall@sparkbot.io"  
-bot_name = "BaseBall@spakbot.io"  
-bearer = "NDRiMTRiOWUtMmNlNS00MGRkLWE3ZmUtMjk4NmE0N2IxYWMxNjE1NTVjOTMtNDA1"    
+bot_email = "your bot username"  
+bot_name = "your bot display name ex: batman-myeokim@sparkbot.io"  
+bearer = "your bot access token"    
 bat_signal  = "https://upload.wikimedia.org/wikipedia/en/c/c6/Bat-signal_1989_film.jpg"  
 run_itty(server='wsgiref', host='0.0.0.0', port=8080)
