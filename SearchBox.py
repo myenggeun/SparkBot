@@ -20,6 +20,6 @@ def index(request):
     return "true"
 
 ####CHANGE THIS VALUE#####
-bearer = "Y2M1NjZjNTUtMmE3Yy00OTI4LTgxOGQtNWFlMTY2NmQyNWUwOGE0N2I5NTItNTI4"
+bearer = "your bot Access token"
 
 run_itty(server='wsgiref', host='0.0.0.0', port=8080)
