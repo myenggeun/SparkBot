@@ -3,54 +3,17 @@ import urllib2
 import json  
 import random  
 
-roomid_list = []
+
 roomid_rn_dict = {}
 image_index = 0
 image_index_1 = 0
 
 
-
-out = ["https://s-media-cache-ak0.pinimg.com/236x/f6/92/1d/f6921df5885460eeef55fe210d63dbde.jpg",\
-        "http://i164.photobucket.com/albums/u4/jmendez2005/ThreeStrikes.jpg",\
-        "https://s-media-cache-ak0.pinimg.com/564x/32/42/16/32421612cde253bee08f66b4155d0ca2.jpg",\
-        "https://media1.popsugar-assets.com/files/thumbor/Kk2c3wwG7m9HhBWsuNah0UHs_o0/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/07/15/748/n/1922398/9ab0a3377e43d629_FFN_OHPIX_LAWRENCE_I_07142016_52122442/i/Iskra-Lawrence-Bikini-Beach-Miami-July-2016.jpg",\
-        "http://bestanimations.com/Humans/Sexy/candice-swanepoel-hot-girl-gif-3.gif",\
-        "http://bestanimations.com/Humans/Sexy/victoria-secret-hot-girls-1.gif",\
-        "http://bestanimations.com/Humans/Sexy/victoria-secret-hot-girls-3.gif",\
-        "http://bestanimations.com/Humans/Sexy/funny-hot-guy.gif",\
-        "http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-12.gif",\
-        "http://bestanimations.com/Humans/Sexy/kate-upton-hot-blond-girl-22.gif",\
-        "http://bestanimations.com/Humans/funny-animated-guy-gif-1.gif",\
-        "http://bestanimations.com/Humans/Sexy/kate-upton-hot-blond-girl-29.gif",\
-        "http://bestanimations.com/Humans/Sexy/Blondes/sexy-hot-blond-animated-gif-13.gif",\
-        "http://bestanimations.com/Humans/Sexy/Blondes/sexy-hot-blond-animated-gif-11.gif",\
-        "http://bestanimations.com/Humans/Sexy/Brunettes/sexy-hot-brunette-animated-gif-7.gif",\
-        "http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-5.gif",\
-        "http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-53.gif",\
-        "http://bestanimations.com/Humans/Sexy/Blondes/hot-blond-girl-4.gif",\
-        "http://bestanimations.com/Humans/Sexy/victoria-secret-hot-girls-1.gif"
-        ]
-
-out_1 = ["http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-14.gif",\
-        "http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-8.gif",\
-        "http://bestanimations.com/Humans/Sexy/sexy-hot-girl-animated-gif-47.gif",\
-        "http://bestanimations.com/Humans/Sexy/Blondes/sexy-hot-blond-animated-gif-9.gif",\
-        "http://bestanimations.com/Humans/Sexy/Brunettes/sexy-hot-brunette-animated-gif-7.gif",\
-        "http://bestanimations.com/Humans/Sexy/Brunettes/sexy-brunette-girl-animated-gif-2.gif"
-        ]
-
-"""
-out = ["http://bestanimations.com/Humans/Sexy/funny-hot-guy.gif",\
-        "http://i164.photobucket.com/albums/u4/jmendez2005/ThreeStrikes.jpg",\
-        "http://bestanimations.com/Humans/funny-animated-guy-gif-1.gif",\
-        "http://bestanimations.com/Humans/Sexy/kate-upton-hot-blond-girl-22.gif"]
+out = ["https://www.onlinethreatalerts.com/article/2016/4/27/beware-of-get-a-free-50-starbucks-gift-card-to-celebrate-45th-anniversary-scam/5.jpg"]
         
 
-out_1 = ["http://bestanimations.com/Humans/Sexy/funny-hot-guy.gif",\
-        "http://i164.photobucket.com/albums/u4/jmendez2005/ThreeStrikes.jpg",\
-        "http://bestanimations.com/Humans/funny-animated-guy-gif-1.gif",\
-        "http://bestanimations.com/Humans/Sexy/kate-upton-hot-blond-girl-22.gif"]
-"""       
+out_1 = ["https://www.onlinethreatalerts.com/article/2016/4/27/beware-of-get-a-free-50-starbucks-gift-card-to-celebrate-45th-anniversary-scam/5.jpg"]     
+
 def sendSparkGET(url):  
     """ 
     This method is used for: 
