@@ -3,7 +3,6 @@ import urllib2
 import json  
 import random  
 
-roomid_list = []
 roomid_rn_dict = {}
 
 def sendSparkGET(url):  
